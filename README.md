@@ -25,3 +25,11 @@ make server
 ```bash
 make frontend
 ```
+
+## Routes
+
+| Route           | Method | Request Body         | Description                                                                   |
+| --------------- | ------ | -------------------- | ----------------------------------------------------------------------------- |
+| /auth/login     | `POST` | `email` + `password` | Login route, returns a jwt `token` + `message`                                |
+| /auth/signup    | `POST` | `email` + `password` | Signup route, returns a jwt `token` + `message`                               |
+| /user/get-my-id | `GET`  | `none`               | Returns the `id` of the user, needs `Authorization` header with the jwt token |
