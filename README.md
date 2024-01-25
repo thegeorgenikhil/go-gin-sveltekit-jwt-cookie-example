@@ -4,6 +4,16 @@ An example of how to use JWT authentication with Go Gin and SvelteKit using cook
 
 ## Setup
 
+### Install dependencies
+
+```bash
+# Installing the node dependencies for the frontend
+make install_frontend
+
+# Installing the go dependencies for the server
+make install_server
+```
+
 ### Start the server
 
 ```bash
